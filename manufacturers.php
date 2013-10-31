@@ -20,10 +20,10 @@
 			$manufacturers = $db->query("SELECT * FROM manufacturer;");
 
 			//loop thought the $manufactuerer and select the attribute to display
-			while ($car = $manufacturers->fetch_object()){
+			while ($manufacturer = $manufacturers->fetch_object()){
 
-				$id = $car->id;
-				$name = $car->name;
+				$id = $manufacturer->id;
+				$name = $manufacturer->name;
 
 				echo "<div class = 'well'>";
 

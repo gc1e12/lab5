@@ -24,14 +24,14 @@ class car{
 
 	public function __construct($id, $manufacturerId, $colourId, $model, $description, $price,$regNumber,$regDate){
 
-		this->$id = $id;
-		this->$manufacturerId = $manufacturerId;
-		this->$colourId = $colourId;
-		this->$model = $model;
-		this->$description = $description;
-		this->$price = $price;
-		this->$regNumber = $regNumber;
-		this->$regDate = $regDate;
+		$this->id = $id;
+		$this->manufacturerId = $manufacturerId;
+		$this->colourId = $colourId;
+		$this->model = $model;
+		$this->description = $description;
+		$this->price = $price;
+		$this->regNumber = $regNumber;
+		$this->regDate = $regDate;
 	}
 
 }

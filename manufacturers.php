@@ -13,6 +13,27 @@
 		<!-- ==================================== -->
 		<!-- PART 1 MANUFACTURER LIST PLACEHOLDER -->
 		<!-- ==================================== -->
+
+		<?php 
+
+			// this store the query output from table manufacturer table
+			$manufacturers = $db->query("SELECT * FROM manufacturer;");
+
+			//loop thought the $manufactuerer and select the attribute to display
+			while ($car = $manufacturers->fetch_object()){
+
+				$id = $car->id;
+				$name = $car->name;
+
+				echo "<div class = 'well'>";
+
+				echo "<p> id is <b> $id </b> </p>";
+				echo "<p> name is <b> $name </b> </p>";
+				echo "</div>";
+
+			}
+
+		?>
 		
 	</div><!-- /manufacturer list -->
 	

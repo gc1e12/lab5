@@ -1,4 +1,5 @@
 <?php require('includes/header.php'); ?>
+<?php require('includes/db.php'); ?>
 
 
 <!-- main content -->

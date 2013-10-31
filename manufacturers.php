@@ -28,7 +28,7 @@
 				echo "<div class = 'well'>";
 
 				echo "<p> id is <b> $id </b> </p>";
-				echo "<p> name is <a href= 'show-manufacturer.php?id=$id'>$name'</a> </p>";
+				echo "<p> name is <a href= 'show-manufacturer.php?id=$id&name=$name'>$name'</a> </p>";
 				echo "</div>";
 
 			}

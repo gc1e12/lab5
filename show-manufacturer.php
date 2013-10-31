@@ -7,7 +7,7 @@
 
 
 	
-	<h2>See all cars we have available from <?php echo $_GET["id"] ?></h2>
+	<h2>See all cars we have available from <?php echo $_GET["name"] ?></h2>
 		
 	<!-- car list -->
 	<div id="car-list" class="row">
@@ -24,10 +24,10 @@
 
 			while ($targetcar = $cars->fetch_object("car")){
 
-				print_r($targetcar);
+				//print_r($targetcar);
 				echo "<div class = 'well'>";
 				echo "<p><b>ID is </b> $targetcar->id ";
-				echo "<p><b>manufacturer_id is </b> $targetcar->manufacturer_id ";
+				//echo "<p><b>manufacturer_id is </b> $targetcar->manufacturer_id ";
 				echo "<p><b>Colour : </b> $targetcar->colour_id ";
 				echo "<p><b>Price : &pound </b> $targetcar->price ";
 				echo "<p><b>Description </b> is $targetcar->description ";
